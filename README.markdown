@@ -30,6 +30,9 @@ Usage
 Put `import debug` right where you want to start debugging (it's like
 [antigravity][]).
 
+Thanks to some monkeys and some patches, it will work as many times as
+you need it to.
+
   [antigravity]: http://xkcd.com/353/
 
 

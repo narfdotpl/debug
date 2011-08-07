@@ -4,18 +4,35 @@
 import debug: https://github.com/narfdotpl/debug
 """
 
+import __builtin__
 from sys import _getframe
 
 from ipdb import set_trace
 
 
-# get frame
-frame = _getframe().f_back
+# do not forget
+old_import = __builtin__.__import__
 
-# inject see (from see import see)
-ns = frame.f_globals
-if 'see' not in ns:
-    ns['see'] = __import__('see', fromlist=['see']).see
+def debug():
+    # get frame
+    frame = _getframe(2)
 
-# start ipdb
-set_trace(frame)
+    # inject see (`from see import see`)
+    ns = frame.f_globals
+    if 'see' not in ns:
+        ns['see'] = old_import('see', fromlist=['see']).see
+
+    # start ipdb
+    set_trace(frame)
+
+# run on first import
+debug()
+
+# monkeypatch `import` so `import debug` will work every time
+def new_import(*args, **kwargs):
+    if args[0] == 'debug':
+        debug()
+    else:
+        return old_import(*args, **kwargs)
+
+__builtin__.__import__ = new_import
