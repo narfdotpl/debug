@@ -10,6 +10,11 @@ for [full history][].
 [v0.2dev][]
 -----------
 
+ - Added support for [IPython][] 0.11 by relying on [ipdb][] (#1, #3).
+
+  [IPython]: http://ipython.org/
+  [ipdb]: https://github.com/gotcha/ipdb
+
 
 [v0.1][]
 --------

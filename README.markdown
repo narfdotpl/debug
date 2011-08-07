@@ -17,10 +17,10 @@ alternative.  From there you can pretend you're just using interactive
 console -- you don't have to know any `pdb` commands, just remember that
 "c" closes debugger and goes back to your program.
 
-(What really happens is that we simply start an [IPython][] debugger and
-import [see][] for you.)
+(What really happens is that we simply start [ipdb][] and import [see][]
+for you.)
 
-  [IPython]: http://ipython.scipy.org/
+  [ipdb]: https://github.com/gotcha/ipdb
   [see]: http://inky.github.com/see/
 
 

@@ -12,5 +12,5 @@ setup(
     author_email='hello@narf.pl',
     url='https://github.com/narfdotpl/debug',
     py_modules=['debug'],
-    install_requires=['ipython >= 0.10, < 0.11', 'see >= 1.0']
+    install_requires=['ipdb == 0.6.1', 'see >= 1.0']
 )

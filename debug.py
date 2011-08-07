@@ -6,9 +6,7 @@ import debug: https://github.com/narfdotpl/debug
 
 from sys import _getframe
 
-from IPython import ipapi
-from IPython.Debugger import Pdb
-from IPython.Shell import IPShell
+from ipdb import set_trace
 
 
 # get frame
@@ -19,7 +17,5 @@ ns = frame.f_globals
 if 'see' not in ns:
     ns['see'] = __import__('see', fromlist=['see']).see
 
-# start ipdb with colors
-shell = IPShell(argv=[''])
-ip = ipapi.get()
-Pdb(ip.options.colors).set_trace(frame)
+# start ipdb
+set_trace(frame)
