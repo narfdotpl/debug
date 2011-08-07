@@ -9,7 +9,7 @@ from IPython.Shell import IPShell
 
 
 __author__ = 'Maciej Konieczny <hello@narf.pl>'
-__version__ = '0.1.0'
+__version__ = '0.2.0dev'
 
 
 # get frame
