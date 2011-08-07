@@ -1,15 +1,14 @@
 #!/usr/bin/env python
 # encoding: utf-8
+"""
+import debug: https://github.com/narfdotpl/debug
+"""
 
 from sys import _getframe
 
 from IPython import ipapi
 from IPython.Debugger import Pdb
 from IPython.Shell import IPShell
-
-
-__author__ = 'Maciej Konieczny <hello@narf.pl>'
-__version__ = '0.2.0dev'
 
 
 # get frame
