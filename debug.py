@@ -15,7 +15,9 @@ from IPython.Shell import IPShell
 frame = _getframe().f_back
 
 # inject see (from see import see)
-frame.f_globals['see'] = __import__('see', fromlist=['see']).see
+ns = frame.f_globals
+if 'see' not in ns:
+    ns['see'] = __import__('see', fromlist=['see']).see
 
 # start ipdb with colors
 shell = IPShell(argv=[''])
