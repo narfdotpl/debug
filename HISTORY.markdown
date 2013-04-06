@@ -10,6 +10,8 @@ for [full history][].
 [v0.2.1dev][]
 -------------
 
+ - Allowed newer versions of ipdb (#4).
+
 
 [v0.2][]
 --------
