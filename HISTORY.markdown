@@ -7,6 +7,10 @@ for [full history][].
   [full history]: https://github.com/narfdotpl/debug/commits/master
 
 
+[v0.2.1dev][]
+-------------
+
+
 [v0.2][]
 --------
 
@@ -24,5 +28,6 @@ for [full history][].
  - Initial release.
 
 
+  [v0.2.1dev]: https://github.com/narfdotpl/debug/compare/v0.2.0...master
   [v0.2]: https://github.com/narfdotpl/debug/compare/v0.1.0...v0.2.0
   [v0.1]: https://github.com/narfdotpl/debug/compare/9fd90f8...v0.1.0
