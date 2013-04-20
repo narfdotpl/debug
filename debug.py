@@ -4,7 +4,11 @@
 import debug: https://github.com/narfdotpl/debug
 """
 
-import __builtin__
+try:
+    import __builtin__
+except ImportError:
+    # Python 3.x
+    import builtins as __builtin__
 from sys import _getframe
 
 from ipdb import set_trace
