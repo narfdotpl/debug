@@ -6,7 +6,7 @@ from distutils.core import setup
 
 setup(
     name='debug',
-    version='0.2.1',
+    version='0.3.0',
     description='Start fancy debugger in a single statement.',
     author='Maciej Konieczny',
     author_email='hello@narf.pl',
