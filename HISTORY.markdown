@@ -7,6 +7,12 @@ for [full history][].
   [full history]: https://github.com/narfdotpl/debug/commits/master
 
 
+[v0.3.1][]
+----------
+
+ - Lowered ipdb requirement to the highest released version (#6).
+
+
 [v0.3][]
 --------
 
@@ -36,6 +42,7 @@ for [full history][].
  - Initial release.
 
 
+  [v0.3.1]: https://github.com/narfdotpl/debug/compare/v0.3.0...v0.3.1
   [v0.3]: https://github.com/narfdotpl/debug/compare/v0.2.1...v0.3.0
   [v0.2.1]: https://github.com/narfdotpl/debug/compare/v0.2.0...v0.2.1
   [v0.2]: https://github.com/narfdotpl/debug/compare/v0.1.0...v0.2.0
