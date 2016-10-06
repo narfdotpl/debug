@@ -34,7 +34,10 @@ debug()
 
 # monkeypatch `import` so `import debug` will work every time
 def new_import(*args, **kwargs):
-    if args[0] == 'debug':
+    name = args[0]
+    level = args[-1]
+    if name == 'debug' and level == 0:
+        # level 0 means only perform absolute imports
         debug()
     else:
         return old_import(*args, **kwargs)
