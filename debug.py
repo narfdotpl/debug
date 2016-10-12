@@ -36,8 +36,9 @@ debug()
 def new_import(*args, **kwargs):
     name = args[0]
     level = args[-1]
-    if name == 'debug' and level == 0:
-        # level 0 means only perform absolute imports
+    is_absolute = level is None or level == 0
+
+    if name == 'debug' and is_absolute:
         debug()
     else:
         return old_import(*args, **kwargs)
